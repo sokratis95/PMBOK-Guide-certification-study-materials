@@ -52,21 +52,28 @@ Exam logistics change from time to time. Confirm them in PMI's current *PMP Cert
 - PMI does not publish the pass mark or the cut-offs behind its performance ratings. The ratings used here (Above Target 80%+, Target 70–79%, Below Target 60–69%, Needs Improvement under 60%) are indicative only.
 - The platform's PDF generator uses jsPDF (MIT licence) and the Inter typeface (SIL Open Font License), both embedded in the HTML file.
 
+## Building from source
+
+Everything above is generated from the chapter and question sources in `source/` by the scripts in `tools/`. To change a question or regenerate the files, see [BUILDING.md](BUILDING.md).
+
 ## Folder layout
 
 ```
-PMBOK8_PMP_Exam_Prep/
+PMBOK-Guide-certification-study-materials/
 ├── README.md
+├── BUILDING.md
 ├── 04_PMP_Exam_Simulator.html
 ├── 01_PMBOK8_Study_Guide.md
 ├── 02_PMBOK8_Comprehensive_Question_Bank.md
 ├── 03_Demo_Exams/
 │   ├── PMP_Demo_Exam_01.md
 │   └── … PMP_Demo_Exam_10.md
-└── PDF/
-    ├── 01_PMBOK8_Study_Guide.pdf
-    ├── 02_PMBOK8_Comprehensive_Question_Bank.pdf
-    └── PMP_Demo_Exam_01.pdf … PMP_Demo_Exam_10.pdf
+├── PDF/
+│   ├── 01_PMBOK8_Study_Guide.pdf
+│   ├── 02_PMBOK8_Comprehensive_Question_Bank.pdf
+│   └── PMP_Demo_Exam_01.pdf … PMP_Demo_Exam_10.pdf
+├── source/          chapter and question sources
+└── tools/           build scripts, quality checks and tests
 ```
 
 PMI, PMP, CAPM and PMBOK are registered marks of the Project Management Institute, Inc.

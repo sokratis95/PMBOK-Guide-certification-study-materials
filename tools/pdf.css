@@ -1,0 +1,39 @@
+@page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  font-family: "Inter", "DejaVu Sans", sans-serif;
+  font-size: 10.2pt; line-height: 1.5; color: #1d232b;
+  max-width: none; margin: 0; padding: 0;
+  font-feature-settings: "cv11", "ss01";
+}
+h1, h2, h3, h4 { font-family: "Inter Display", "Inter", sans-serif; color: #12304f; line-height: 1.25; break-after: avoid; page-break-after: avoid; }
+h1 { font-size: 23pt; font-weight: 700; margin: 0 0 8pt; padding-bottom: 6pt; border-bottom: 3px solid #1f6feb; }
+h2 { font-size: 16pt; font-weight: 700; margin: 20pt 0 8pt; padding-bottom: 3pt; border-bottom: 1.5px solid #c9d6e8; }
+h3 { font-size: 12.5pt; font-weight: 650; margin: 15pt 0 6pt; color: #1b4a7a; }
+h4 { font-size: 11pt; font-weight: 650; margin: 12pt 0 4pt; color: #1b4a7a; }
+p { margin: 0 0 7pt; orphans: 3; widows: 3; }
+ul, ol { margin: 0 0 8pt; padding-left: 18pt; }
+li { margin: 1.5pt 0; }
+li > ul, li > ol { margin-bottom: 2pt; }
+a { color: #1f5fbf; text-decoration: none; }
+strong { font-weight: 650; color: #111820; }
+code { font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace; font-size: 9pt; background: #eef2f7; padding: 0.5pt 3pt; border-radius: 3px; }
+pre { font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace; font-size: 8.8pt; background: #f3f6fa; border: 1px solid #d8e0ea; border-radius: 4px; padding: 7pt 9pt; white-space: pre-wrap; break-inside: avoid; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 8pt 0 10pt; padding: 7pt 11pt; background: #f2f7fd; border-left: 4px solid #1f6feb;
+  border-radius: 0 5px 5px 0; break-inside: avoid; color: #1d2733;
+}
+blockquote h4 { margin-top: 2pt; }
+blockquote p:last-child { margin-bottom: 0; }
+table { border-collapse: collapse; width: 100%; margin: 6pt 0 11pt; font-size: 9.2pt; break-inside: auto; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; page-break-inside: avoid; }
+th { background: #12304f; color: #fff; font-weight: 600; text-align: left; padding: 4pt 6pt; border: 1px solid #12304f; }
+td { padding: 3.5pt 6pt; border: 1px solid #ccd6e2; vertical-align: top; }
+tbody tr:nth-child(even) td { background: #f6f9fc; }
+hr { border: none; border-top: 1px solid #c9d6e8; margin: 14pt 0; }
+img { max-width: 100%; }
+/* keep a question with its options */
+p + ul { break-before: avoid; }
+.title-block-header, #title-block-header { display: none; }
