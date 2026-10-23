@@ -1,0 +1,6 @@
+# Build intermediates (see BUILDING.md)
+build/
+tools/tests/out/
+__pycache__/
+*.pyc
+node_modules/
